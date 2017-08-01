@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--Written by Gabriele Kukauskaite-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+	<meta name="Author" content="Gabriele Kukauskaite">
+	<!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Webmasters</title>
+	<link rel="stylesheet" href="reset.css" />
+	<link rel="stylesheet" href="style.css" /> 
+  </head>
+  
+  <body>
+  <div id="wrapper"> 
+    <header>
+	  <h1><a href="index.html" accesskey="1" title="Home"><img id="logo" src="images/web.png" alt="logo" width="150"></a></h1>
+	  <nav>
+        <ul>
+          <li><a href="about.html" accesskey="2">ABOUT</a></li>
+          <li><a href="news.html" accesskey="3">NEWS</a></li>
+          <li><a href="demo.html" accesskey="4">DEMO</a></li>
+          <li><a href="contact.html" accesskey="5">CONTACT</a></li>
+		  <li><a href="accessibility.html" accesskey="6">ACCESSIBILITY</a></li>
+        </ul>
+      </nav>
+	</header>
+	
+	<section id="contact">
+      <h3 class="top-line">
+        HERE TO HELP
+	  </h3>
+	    <img class="contact-icon" src="images/business.png" alt="contact icon" width="120">
+	  <p class="contact-text">
+        We'd love to hear from you and we're never too busy to have a quick chat about your plans and how we can help. 
+        So just call us, send us your question or even visit us in sunny Sheffield.
+	  </p>
+	</section>
+	
+	
+	<!--form for sending questions to email-->
+	<form name="myform"
+	  action="http://www.dcs.shef.ac.uk/cgi-bin/FormMail.pl"
+      method="get">
+	  
+    <input type="hidden" name="recipient"
+      value="gkukauskaite1@sheffield.ac.uk" />
+	  
+	<h3 class="top-line">
+	  ASK US
+	</h3>
+	
+	<img class="contact-icon" src="images/mail.png" alt="mail icon" width="120">
+	
+      <label for="Name">Name:</label>
+      <input type="text" name="Name" id="Name" value="" maxlength="40" size="20" />
+  	  <br> 
+  	  <label for="email">E-mail:</label>
+	  <!--input type is email because if email is not entered correctly the browser would pop a window telling to enter a correct email-->
+  	  <input type="email" name="email" id="email" value="" maxlength="40" size="20" /> 
+  	  <br>
+  	  <label for="Message">Message:</label>
+  	  <textarea id="Message" class="text" cols="20" rows ="5" name="Message"></textarea>
+  	  <br>
+      <input type="submit" name="Send" id="button" value="Send" />
+	
+    </form>
+	
+	<section id="address">
+	  <h3 class="top-line">
+	    GET IN TOUCH WITH US
+	  </h3>
+	  <img class="contact-icon" src="images/offices.png" alt="office icon" width="120">
+	  <p class="contact-text">
+   	    33 Hesley Road<br>Sheffield S5 0GZ<br>South Yorkshire<br>UNITED KINGDOM
+	  </p>
+	  <p id="address-text">
+	    WEBMASTERS<br>webm@gmail.com<br>0114 496 0662
+      </p>
+   	</section>
+	
+    <div id="footer">
+      <p id="copyright">&copy; Gabriele Kukauskaite 2014</p>
+	  <p id="credit">Icons made by Freepik from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a><br>
+	    is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+    </div>
+	
+  </div>	
+  </body>
+  
+</html>

@@ -1,0 +1,405 @@
+/*<Written by Gabriele Kukauskaite*/
+
+/*general styling*/
+body {
+ background: url("./images/back.jpg")no-repeat center center fixed; /*i used that so the image would stay the same when zooming in or out*/
+ background-size: cover;                                            /*or changing the size of a window*/
+}
+
+#wrapper {
+  margin-top: 20px; 
+  margin: 0px auto; 
+  width: 1150px;
+}
+
+/*styles for header*/
+#logo { 
+  float: left;
+  padding-left:10px;
+}
+
+#logo:hover{
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+header {
+  border-bottom: 5px solid #A12222;
+  color: #333333;
+  text-align: left;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 100%;
+  margin-top: 20px;
+}
+
+/*styles for navigation bar*/
+nav ul {
+  list-style: none;
+  margin: 0px 200px;
+  text-align: center;
+  padding-bottom: 5px;
+
+}
+
+nav ul li {
+  display: inline-block; /*using this navigation is positioned to be in one horizontal line*/
+  padding: 80px 25px 0px 0px ;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #A12222;
+  -webkit-transition: all 0.5s ease; 
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/*styles for home page content*/
+#home-header{
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Tahoma, Geneva, sans-serif;
+  margin: 50px 0px 20px 0px;
+}
+
+#home-text{
+  font-size: 30px;
+  text-align:center;
+  font-family: Tahoma, Geneva, sans-serif;
+  line-height: 55px;
+  margin-bottom: 62px;
+}
+
+#home-icon {
+  display: block; /*making it a block i can move the icon around the page using margins*/
+  width: 150px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+
+#home-icon:hover{
+  -webkit-transform: rotate(360deg); /*rotates the image 360 degrees*/
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1.5s ease; /*slows the transformation. in this case slows the rotation*/
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+
+/*stles for about page content*/
+h3.top-line{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight:bold;
+  border: 2px solid #A12222;
+  margin: 50px 0px 20px 0px;
+  padding-bottom:2px;
+  line-height: 20px;
+  background-color: #D9D9CF;
+  padding-top: 5px;
+  text-align:center;
+  border-radius: 10px;
+  height: 25px;
+}
+
+#founder{
+  display: inline-block;
+  vertical-align:top;  /*to allign the sections in a horizontal line at the top, right below the header and position them using margins*/
+  width: 500px;
+  margin-left: 50px;
+  padding-bottom: 96px;
+}
+
+#photo{ 
+  display: inline-block;
+  vertical-align:top;
+  width: 170px;
+  border-radius: 25%; /*rounds the corners*/
+  border: 2px solid #A12222;
+  margin: 25px 20px 0px 10px;
+}
+
+#founder-text{
+  display: inline-block;
+  vertical-align: top;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  width: 290px;
+}
+
+#about{
+  display: inline-block;
+  vertical-align:top;
+  width: 450px;
+  margin-left: 100px;
+}
+
+p.about-text{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/*styles for news page content*/
+#news1{
+  display: inline-block;
+  vertical-align:top;
+  width: 380px;
+  margin-left: 170px;
+}
+
+#news2{
+  display: inline-block;
+  vertical-align: top;
+  width: 380px;
+  margin-left: 100px;
+}
+
+#news3{
+  width: 380px;
+  margin: 0 auto;
+}
+
+img.news-icon{
+  display: inline-block;
+  vertical-align:top;
+  width: 80px;
+  margin: 10px 10px 0px 10px
+}
+
+p.news-text{
+  display: inline-block;
+  vertical-align: top;
+  width: 270px;
+  text-align: justify;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#news-text2{
+  display: inline-block;
+  vertical-align:top;
+  width: 270px;
+  text-align: justify;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 50px;
+}
+
+/*stles for demo page*/
+#demo-text{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: bold; 
+}
+
+/*styles for canvas*/
+canvas{ 
+  border: 2px solid black;
+  background: url("./images/background.jpg");
+  background-size: 650px; 
+  margin: 0px 0px 20px 170px;
+}
+
+/*styles for contact page content*/
+#contact{
+  display: inline-block;
+  margin-left: 50px;
+  width: 280px;
+  margin-bottom: 138px;
+}
+
+img.contact-icon {
+  display: block;
+  width: 120px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  padding: 10px 0px 10px 0px;;
+}
+
+p.contact-text{
+  display: inline-block;
+  vertical-align: top;
+  line-height: 20px;
+  text-align: justify;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+}
+
+#address{
+  display: inline-block;
+  margin-left: 100px;
+  vertical-align: top;
+  width: 280px;
+}
+
+#address-text{
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  font-family: Tahoma, Geneva, sans-serif;
+  line-height: 20px;
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+/*styles for form*/
+form{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+  width: 280px;
+}
+
+label{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  width: 65px;
+  text-align: left;
+  line-height: 30px;
+}
+
+input{
+  font-family: Tahoma, Geneva, sans-serif;
+  width: 205px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+textarea{ 
+  font-family: Tahoma, Geneva, sans-serif;
+  width: 202px;
+  border: 1px solid gray;
+  resize: vertical;
+  vertical-align: top;
+  max-height: 200px;
+  margin-top: 7px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+#button{ 
+  font-family: Tahoma, Geneva, sans-serif;
+  margin: 10px 0px 50px 70px;
+  padding:5px 0px 5px 0px;
+  border-radius:5px;
+  font-size:14px;
+}
+
+#button:hover{
+  border: 2px solid #A12222;
+}
+
+/*styles for accessibility page content*/
+#accessibility-statement{
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+  margin-left: 70px;
+  margin-bottom: 296px;
+}
+
+#accessibility-text{
+  font-family: Tahoma, Geneva, sans-serif;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+#access-keys{
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+  margin-left: 150px;
+}
+
+#link{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-decoration: underline; /*underlines the text*/
+}
+
+#link a:link{
+  text-decoration: none;
+}
+
+#link a:visited{
+  color: #333333;
+}
+
+#webmasters-keys{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+#list{
+  list-style-type:disc; /*makes list bullets to be black dots*/
+  margin-left:20px;
+  line-height:20px;
+  text-align:justify;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size:15px;
+}
+
+/*styles for credit in the footer*/
+#credit{ 
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 685px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#credit a:link{
+  text-decoration: none;
+  color: #A12222;
+}
+
+#credit a:visited{
+  color: #333333;
+}
+
+/*styles for copyright in the footer*/
+#copyright{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/*styles for the footer*/
+#footer{
+  border-top: 3px solid #A12222;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #333333;
+  padding-top: 10px;
+}
